@@ -1,0 +1,471 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: FarFromHome;
+    src: url(fonts/farFromHome.otf);
+}
+
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat Thin;
+    src: url(fonts/Montserrat-Thin.ttf);
+}
+
+/* COMMON RULES FOR BOTH MOBILE AND DESKTOP */
+
+body {
+    margin: 0%;
+    font-family: "Montserrat";
+    color: white;
+}
+
+.copyright {
+    font-size: 90%;
+    font-family: "Montserrat Thin";
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#logo1 {
+    display: flex;
+}
+
+#logo1 div {
+    background-color: #b11313;
+    border-radius: 2em;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw;
+}
+
+.bg3 {
+    background-color: #114C92;
+    background-image: url(Assets/Illustration/img5.png);
+    background-repeat: no-repeat;
+}
+
+.bg4 {
+    background-color: #B11313;
+    background-image: url(Assets/Illustration/img6.png);
+    background-repeat: no-repeat;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+/* #############################################################################################################
+                MOBILE RULES
+############################################################################################################# */
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        position: relative;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+    #logo {
+        margin-top: 1vh;
+        margin-left: 6vw;
+    }
+
+    #body1 {
+        margin-top: 5vh;
+        flex-direction: column;
+        height: 31vh;
+        align-items: center;
+    }
+
+    #body2 {
+        background-color: #B11313;
+        flex-direction: column;
+    }
+
+    #body2 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 90%;
+        text-align: center;
+    }
+
+    #body2 img {
+        width: 60vw;
+    }
+
+    .body2txt {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .body2elems {
+        margin-bottom: 10vh;
+    }
+
+    #body3 {
+        height: 80vh;
+        background-size: contain;
+        padding-top: 8vh;
+    }
+
+    #body3 form, .body3content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body3content input[type=text] , .body4content input[type=text]{
+        width: 80vw;
+        height: 6vh;
+        border-radius: 3em;
+        border: none;
+        padding-left: 7%;
+        margin-bottom: 3vh;
+    }
+
+    #body4 {
+        background-size: 85%;
+        background-position: 316% 115%;
+        height: 80vh;
+        padding-top: 10%;
+    }
+
+    .body4content form input[type=text] {
+        width: 70vw;
+        height: 5vh;
+        background: none;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .body4content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #chkbx label {
+        font-size: 70%;
+    }
+
+    #chkbx label a {
+        color: white;
+    }
+
+    .body4content form {
+        margin-left: 6%;
+        margin-top: 10%;
+    }
+
+    #customBtn {
+        margin-top: 10%;
+        width: 45%;
+    }
+
+    #footer {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        color: white;
+    }
+
+    select {
+        height: 30px;
+        border-radius: 3em;
+        border: none;
+        width: 22vw;
+        background-color: #b11313;
+        padding-left: 3%;
+        color: white;
+        float: right;
+        position: absolute;
+        left: 70%;
+    }
+
+    audio {
+        display: none;
+    }
+
+    .h4 {
+        font-family: "FarFromHome";
+        color: white;
+        font-size: 5vw;
+    }
+
+    .title {
+        font-family: "FarFromHome";
+        font-size: 120%;
+    }
+
+    .subDesc {
+        font-size: 80%;
+        text-align: center;
+        margin-bottom: 3vh;
+    }
+
+    .btnsContainer {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .btns {
+        width: 35vw;
+        height: 8vh;
+        border-radius: 4em;
+        border: none;
+        font-weight: bold;
+        color: #b11313;
+    }
+
+    .whiteBtns {
+        background: none;
+        border: 1px solid white;
+        color: white;
+    }
+
+    body {
+        background-image: url(Assets/Illustration/img1.png);
+        width: 100vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+/* #############################################################################################################
+                DESKTOP RULES
+############################################################################################################# */
+
+@media screen and (min-width:720px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    select {
+        height: 30px;
+        border-radius: 3em;
+        border: none;
+        width: 10vw;
+        background-color: #b11313;
+        padding-left: 25%;
+        color: white;
+    }
+    
+    .redBg {
+        background-color: #B11313;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .whiteText {
+        color: white;
+    }
+    
+    .h4 {
+        font-family: "FarFromHome";
+        color: white;
+        font-size: 230%;
+    }
+    
+    .subDesc {
+        font-family: "Montserrat Regular";
+    }
+    
+    .input {
+        width: 26vw;
+        height: 5vh;
+        border-radius: 5em;
+        border: none;
+        padding-left: 2%;
+        font-size: 100%;
+        margin-top: 3%;
+    }
+    
+    #logo {
+        align-content: center;
+        justify-content: space-around;
+        width: 22%;
+    }
+    
+    #navMenu {
+        font-family: "Montserrat";
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: space-between;
+    }
+    
+    #body1 {
+        background-image: url(Assets/Illustration/img1.png);
+        background-size: cover;
+        height: 127%;
+    }
+    
+    #body2 {
+        background-color: #B11313;
+        height: 160vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #body3 {
+        height: 88vh;
+    }
+    
+    #body4 {
+        height: 130vh;
+        background-position: 137%;
+    }
+    
+    #footer {
+        background-color: black;
+        height: 35vh;
+        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #footerMenu {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -15%;
+    }
+    
+    #chkbx {
+        margin-top: 4%;
+        font-size: 85%;
+    }
+    
+    .btns {
+        width: 15vw;
+        height: 9vh;
+        border-radius: 20px;
+        border: none;
+        border-style: none;
+        font-size: 102%;
+        font-weight: bolder;
+    }
+    
+    .btnsContainer {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    
+    #customBtn {
+        margin-top: 10%;
+        width: 70%;
+    }
+    
+    .whiteBtns {
+        background-color: transparent;
+        color: white;
+        border: 1px white solid;
+    }
+    
+    .h3 {
+        font-weight: bold;
+        font-size: 135%;
+    }
+    
+    .body1content {
+        display: flex;
+        float: left;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 17%;
+        margin-left: 14%;
+    }
+    
+    .body2elems {
+        text-align: justify;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .body2elems img {
+        width: 100%;
+    }
+    
+    .body2txt {
+        margin-top: 13%;
+        margin-bottom: 13%;
+        font-family: "Montserrat Regular";
+    }
+    
+    .body3content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+        margin-right: 13vw;
+        margin-top: 10vh;
+    }
+    
+    .body4content {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: -40%;
+        margin-top: 15%;
+    }
+    
+    .transparentInput {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .transparentInput::placeholder { 
+        color: white;
+        opacity: 0.8;
+      }
+    
+    nav {
+        height: 13%;
+    }
+    
+    .title {
+        font-family: "FarFromHome";
+        font-size: 500%;
+    }
+    
+    .body4content form {
+        margin-top: 10%;
+    }
+}
